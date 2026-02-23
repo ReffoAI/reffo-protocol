@@ -1,0 +1,49 @@
+{
+  "name": "@reffo/protocol",
+  "version": "0.1.0",
+  "description": "Schema.org + Reffo extension types, category schemas, and utility functions for the Reffo protocol",
+  "license": "CC0-1.0",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reffo/reffo-protocol.git"
+  },
+  "keywords": [
+    "reffo",
+    "schema.org",
+    "protocol",
+    "p2p",
+    "marketplace"
+  ]
+}
