@@ -1,6 +1,7 @@
 export {
   // Type aliases
   type ListingStatus,
+  type RentalDurationUnit,
   type SellingScope,
   type OfferStatus,
   type MediaType,
