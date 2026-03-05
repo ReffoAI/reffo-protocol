@@ -111,6 +111,7 @@ export interface BeaconSettings {
   locationCountry?: string;
   defaultSellingScope: SellingScope;
   defaultSellingRadiusMiles: number;
+  profilePicturePath?: string;
 }
 
 export interface BeaconInfo {
