@@ -1,6 +1,8 @@
 # @reffo/protocol
 
-Shared protocol definitions for the Reffo peer-to-peer marketplace. Contains Schema.org-aligned types, category schemas, and utility functions used by Reffo Beacon, Reffo Webapp, and other implementations.
+**Personal Inventory Management Protocol**
+
+Shared definitions for the protocol. Contains Schema.org-aligned types, category schemas, and utility functions used by Reffo Beacon, Reffo Webapp, and other implementations.
 
 ## Install
 

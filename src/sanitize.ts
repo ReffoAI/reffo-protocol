@@ -1,5 +1,5 @@
 /**
- * Input sanitization utilities for the Reffo protocol.
+ * Input sanitization utilities for the protocol.
  *
  * Every free-text field that crosses a trust boundary (HTTP, DHT, MCP)
  * should be run through sanitizeField / sanitizeObject before storage.

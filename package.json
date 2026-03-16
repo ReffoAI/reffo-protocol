@@ -1,7 +1,7 @@
 {
   "name": "@reffo/protocol",
   "version": "0.2.1",
-  "description": "Schema.org + Reffo extension types, category schemas, and utility functions for the Reffo protocol",
+  "description": "Schema.org + Reffo extension types, category schemas, and utility functions for the protocol",
   "license": "CC0-1.0",
   "type": "module",
   "main": "./dist/cjs/index.js",
