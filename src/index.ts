@@ -61,4 +61,5 @@ export {
   defaultSchema,
   getCategorySchema,
   buildSchemaOrgLD,
+  getAttributeKeys,
 } from './schemas.js';
