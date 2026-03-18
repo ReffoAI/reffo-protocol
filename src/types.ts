@@ -59,6 +59,12 @@ export interface Ref {
   rentalDuration?: number;
   /** Rental: duration unit */
   rentalDurationUnit?: RentalDurationUnit;
+  /** Purchase: date of purchase (ISO date) */
+  purchaseDate?: string;
+  /** Purchase: price paid */
+  purchasePrice?: number;
+  /** Reffo: collection this ref belongs to */
+  collectionId?: string;
   /** Reffo: beacon public key that owns this ref */
   beaconId: string;
   /** Schema.org: dateCreated */
@@ -159,6 +165,7 @@ export interface Negotiation {
   responseMessage?: string;
   createdAt: string;
   updatedAt: string;
+  archivedAt?: string;
 }
 
 export type NegotiationCreate = Omit<Negotiation, 'createdAt' | 'updatedAt' | 'status' | 'counterPrice' | 'responseMessage'> & {
