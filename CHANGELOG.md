@@ -6,6 +6,19 @@ This project follows [Keep a Changelog](https://keepachangelog.com/) and [Semant
 
 ## [Unreleased]
 
+Nothing yet.
+
+## [0.4.0] - 2026-04-03
+
+### Added
+- `isValidEmail()` for basic email format validation
+- `validateCoordinates()` for lat/lng bounds checking ([-90,90] / [-180,180])
+- `SanitizeMode` type (`'truncate' | 'reject'`) for `sanitizeField` and `sanitizeObject`; default remains `'truncate'` for backward compatibility
+- `SanitizationError` thrown in `'reject'` mode for use at HTTP API boundaries
+- Missing `FIELD_CONSTRAINTS` entries: `content`, `category`, `subcategory`, `condition`, `topic`, `subject`, `currency`
+
+## [0.3.0] - 2026-03-27
+
 ### Added
 - `archivedAt` field to `Negotiation` interface
 - Overhaul category schemas: 32 schemas covering 97 subcategories, export `getAttributeKeys`
